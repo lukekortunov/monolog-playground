@@ -9,8 +9,14 @@ Analyze http traffic for elk/sentry/newrelic
     [x] setup libs: router, di container
 
 [ ] Logging into files
+    [ ] Create test that will log into file until file is less than preconfigured value 
 
 [ ] Logging into NewRelic
+    [x] Install NewRelic monolog enricher
+    [x] Push NewRelic handler to Logger instance
+    [x] Start collecting logs in NewRelic
+    [ ] Check how BufferHandler works (should be 1 HTTP request to NewRelic with batch of logs)
+    [ ] Check how logs are formatted. Probably need custom formatter.
 
 [ ] Logging into Sentry
 
